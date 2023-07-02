@@ -3,8 +3,15 @@
     padding: 0;
 }
 
+/* Clear the outline in the focus state */
+input:focus {
+    outline: none;
+}
+
+/* Make the direction of the body -> column */
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -33,7 +40,7 @@ body {
     margin: 5px;
     background-color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
     font-size: 24px;
     color: #333;
     border-radius: 8px;
@@ -50,8 +57,11 @@ input[type="number"] {
    appearance: textfield; /*hide the arrows of the input number*/
   }
 
-#buttons-container {
-    margin-top: 25px;
+/* It was #buttons--container when there was no element with this id */
+#Buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
 }
 
 button {
@@ -63,6 +73,20 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+/* Change the buttons color */
+butotn#start {
+    /* background: #17a2b8; */
+    background: #ffc107;
+}
+
+button#stop {
+    background: #dc3545;
+}
+
+button#reset {
+    background: #ffc107;
 }
 
 button:hover {
