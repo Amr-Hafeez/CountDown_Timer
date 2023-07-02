@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    gap: 20px;
+}
+
+#img-container {
+    margin-bottom: 30px;
+}
+
+#clock-img {
+    width: 170px;
+}
+
+#time-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.time-item {
+    flex: 0 0 calc(33.33% - 10px); /*divide the container into 3 columns , each column is 33.33% of the container width and 10px is the margin between the columns*/
+    margin: 5px;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 24px;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+input[type="number"] {
+    width: 60px;
+    height: 40px;
+    padding: 5px;
+    font-size: 25px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+   appearance: textfield; /*hide the arrows of the input number*/
+  }
+
+#buttons-container {
+    margin-top: 25px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
